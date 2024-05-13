@@ -1,0 +1,1 @@
+C:\Users\kumar\Desktop\KhabarNews\app\src\main\cpp\CMakeLists.txt
