@@ -15,4 +15,7 @@ interface StringDao {
 
     @Query("SELECT * FROM string_table WHERE title = :value LIMIT 1")
     fun getStringByValue(value: String): StringEntity?
+
+    @Query("DELETE FROM string_table WHERE title = :value")
+    fun deleteByTitle(value: String)
 }

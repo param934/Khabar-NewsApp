@@ -20,17 +20,17 @@ class BookmarkModel(private val dao: StringDao) : ViewModel() {
         }
     }
 
-//    fun getAllStrings(): LiveData<List<StringEntity>> {
-//        return repository.getAllStrings()
-//    }
+
 
     fun isStringEntityExists(value: String) {
        viewModelScope.launch {
             repository.isStringEntityExists(value,isExist)
         }
     }
-//    fun setbookmarks(){
-//        state=state.copy(isLoading = true)
-//        val
-//    }
+    fun delete(title: String){
+        viewModelScope.launch {
+            repository.delete(title)
+        }
+    }
+
 }

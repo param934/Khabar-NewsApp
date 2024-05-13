@@ -35,12 +35,21 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
+import com.example.newsapp.domain.model.Article
+import com.example.newsapp.domain.model.Source
 import com.example.newsapp.presentation.component.ImageHolder
 import com.example.newsapp.presentation.component.NewsArticleCard
+import com.example.newsapp.presentation.news_screen.NewsScreenEvent
+import com.example.newsapp.presentation.news_screen.NewsScreenState
+import com.example.newsapp.presentation.news_screen.NewsScreenViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun BookmarkpageUI(navController: NavController, viewmodel: BookmarkModel) {
+fun BookmarkpageUI(
+    viewModel: NewsScreenViewModel,
+    navController: NavController,
+    viewmodel: BookmarkModel
+) {
     val scrollBehavior = TopAppBarDefaults.enterAlwaysScrollBehavior()
 
     val data by viewmodel.allStrings.observeAsState(emptyList())
@@ -61,16 +70,31 @@ fun BookmarkpageUI(navController: NavController, viewmodel: BookmarkModel) {
             LazyColumn {
 
                 println(data)
-                data?.let { items ->
+                data.let { items ->
                     println(it)
                     items(items) { it ->
                         Card(
                             modifier = Modifier
                                 .fillMaxWidth()
-                                .padding(vertical = 8.dp, horizontal = 16.dp).clickable {navController.navigate("article_screen?web_url=${it.url}")  }
+                                .padding(vertical = 8.dp, horizontal = 16.dp)
+                                .clickable {
+                                    navController.navigate(
+                                        "article_screen?web_url=${it.url}"
+                                    )
+                                    it.imageurl?.let { it1 -> Article(title = it.title, url = it.url, urlToImage = it1, content = it.content, author = "", publishedAt = "", description = "", source = Source(id = it.id.toString(),name = "")) }
+                                        ?.let { it2 ->
+                                            NewsScreenEvent.OnNewsCardClicked(
+                                                it2
+                                            )
+                                        }?.let { it3 -> viewModel.onEvent(event = it3) }
+
+                                }
                         ) {
                             Row(modifier = Modifier.fillMaxWidth()) {
-                                ImageHolder(imageUrl = it.imageurl, modifier = Modifier.height(100.dp))
+                                ImageHolder(
+                                    imageUrl = it.imageurl,
+                                    modifier = Modifier.height(100.dp)
+                                )
                                 Spacer(modifier = Modifier.width(12.dp))
                                 Column(modifier = Modifier.weight(1f)) {
                                     Text(

@@ -1,0 +1,12 @@
+-keep class j$.time.OffsetDateTime {
+    java.lang.String format(j$.time.format.DateTimeFormatter);
+    j$.time.OffsetDateTime parse(java.lang.CharSequence, j$.time.format.DateTimeFormatter);
+}
+-keep class j$.time.format.DateTimeFormatter {
+    j$.time.format.DateTimeFormatter ISO_OFFSET_DATE_TIME;
+    j$.time.format.DateTimeFormatter ofLocalizedDate(j$.time.format.FormatStyle);
+    j$.time.format.DateTimeFormatter withLocale(java.util.Locale);
+}
+-keep class j$.time.format.FormatStyle {
+    j$.time.format.FormatStyle LONG;
+}
