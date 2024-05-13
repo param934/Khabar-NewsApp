@@ -1,7 +1,7 @@
-#Tue May 14 03:30:34 IST 2024
-base.0=C\:\\Users\\Eternal\\Desktop\\NewsApp\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeExtDexDebugAndroidTest\\classes.dex
-base.1=C\:\\Users\\Eternal\\Desktop\\NewsApp\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\0\\classes.dex
-base.2=C\:\\Users\\Eternal\\Desktop\\NewsApp\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\8\\classes.dex
+#Tue May 14 04:51:40 IST 2024
+base.0=C\:\\Users\\kumar\\Desktop\\KhabarNews\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeExtDexDebugAndroidTest\\classes.dex
+base.1=C\:\\Users\\kumar\\Desktop\\KhabarNews\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\0\\classes.dex
+base.2=C\:\\Users\\kumar\\Desktop\\KhabarNews\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\8\\classes.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=8/classes.dex
