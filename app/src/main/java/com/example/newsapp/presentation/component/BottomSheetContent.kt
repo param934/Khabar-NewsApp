@@ -1,5 +1,8 @@
 package com.example.newsapp.presentation.component
 
+import android.annotation.SuppressLint
+import androidx.compose.foundation.gestures.detectTapGestures
+import androidx.compose.foundation.gestures.forEachGesture
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -27,7 +30,11 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.geometry.isFinite
+import androidx.compose.ui.input.pointer.PointerEventType
+import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
@@ -49,7 +56,15 @@ fun BottomSheetContent(
     Surface(
         modifier = Modifier.padding(16.dp)
     ) {
-        Column(horizontalAlignment = Alignment.CenterHorizontally) {
+        Column(horizontalAlignment = Alignment.CenterHorizontally, modifier = Modifier.detectTripleTapGesture {
+            if (!isMicActive) {
+                viewModel.readContent()
+            } else {
+                viewModel.stopReading()
+            }
+            // Toggle mic status
+            isMicActive = !isMicActive
+        }) {
             viewModel.readFileContent(article.content.toString())
             Text(
                 text = article.title,
@@ -111,5 +126,32 @@ fun BottomSheetContent(
                 Icon(imageVector = Icons.Default.MenuBook, contentDescription = "OpenBook")
             }
         }
+    }
+}
+private const val TRIPLE_TAP_TIMEOUT_MS = 300L
+
+@SuppressLint("ModifierFactoryUnreferencedReceiver")
+@Composable
+fun Modifier.detectTripleTapGesture(onTripleTap: () -> Unit): Modifier {
+    return pointerInput(Unit) {
+        var tapCount = 0
+        var lastTapTimestamp = 0L
+
+        detectTapGestures(
+            onTap = {
+                val currentTimestamp = System.currentTimeMillis()
+                if (currentTimestamp - lastTapTimestamp < TRIPLE_TAP_TIMEOUT_MS) {
+                    tapCount++
+                } else {
+                    tapCount = 1
+                }
+                lastTapTimestamp = currentTimestamp
+
+                if (tapCount == 3) {
+                    onTripleTap()
+                    tapCount = 0
+                }
+            }
+        )
     }
 }

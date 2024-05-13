@@ -1,0 +1,32 @@
+<variant
+    name="release"
+    useSupportLibraryVectorDrawables="true"
+    package="com.example.newsapp"
+    minSdkVersion="24"
+    targetSdkVersion="34"
+    mergedManifest="build\intermediates\merged_manifest\release\AndroidManifest.xml"
+    proguardFiles="build\intermediates\default_proguard_files\global\proguard-android-optimize.txt-8.0.0;proguard-rules.pro"
+    partialResultsDir="build\intermediates\lint_vital_partial_results\release\out"
+    desugaredMethodsFiles="C:\Users\Eternal\.gradle\caches\transforms-3\69f67e7bd3355bd9265f3d526d82f1c0\transformed\desugar_jdk_libs_configuration-2.0.3-desugar-lint.txt;C:\Users\Eternal\.gradle\caches\transforms-3\0f665cb94b0dccb4678c5157abf75248\transformed\D8BackportedDesugaredMethods.txt">
+  <buildFeatures
+      coreLibraryDesugaring="true"
+      namespacing="REQUIRED"/>
+  <sourceProviders>
+    <sourceProvider
+        manifests="src\main\AndroidManifest.xml"
+        javaDirectories="src\main\java;src\release\java;src\main\kotlin;src\release\kotlin"
+        resDirectories="src\main\res;src\release\res"
+        assetsDirectories="src\main\assets;src\release\assets"/>
+  </sourceProviders>
+  <testSourceProviders>
+  </testSourceProviders>
+  <testFixturesSourceProviders>
+  </testFixturesSourceProviders>
+  <mainArtifact
+      classOutputs="build\intermediates\javac\release\classes;build\tmp\kotlin-classes\release;build\tmp\kapt3\classes\release;build\kotlinToolingMetadata;build\intermediates\hilt\component_classes\release;build\intermediates\compile_and_runtime_not_namespaced_r_class_jar\release\R.jar"
+      applicationId="com.example.newsapp"
+      generatedSourceFolders="build\generated\source\kapt\release;build\generated\ap_generated_sources\release\out"
+      generatedResourceFolders="build\generated\res\resValues\release"
+      desugaredMethodsFiles="C:\Users\Eternal\.gradle\caches\transforms-3\69f67e7bd3355bd9265f3d526d82f1c0\transformed\desugar_jdk_libs_configuration-2.0.3-desugar-lint.txt;C:\Users\Eternal\.gradle\caches\transforms-3\0f665cb94b0dccb4678c5157abf75248\transformed\D8BackportedDesugaredMethods.txt">
+  </mainArtifact>
+</variant>

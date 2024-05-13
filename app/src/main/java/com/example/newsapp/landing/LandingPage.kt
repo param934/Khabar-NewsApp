@@ -3,12 +3,18 @@ package com.example.newsapp.landing
 import android.content.Context
 import android.Manifest
 import android.content.pm.PackageManager
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.ArrowForward
 import androidx.compose.material3.Button
+import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -21,9 +27,11 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.core.app.ActivityCompat
 import androidx.navigation.NavHostController
+import com.example.newsapp.R
 import com.google.accompanist.permissions.ExperimentalPermissionsApi
 import com.google.accompanist.permissions.isGranted
 import com.google.accompanist.permissions.rememberMultiplePermissionsState
@@ -38,7 +46,8 @@ fun LocationPermissionPage(
         mutableStateOf(false)
     }
     var notgiven by remember {
-        mutableStateOf(false)    }
+        mutableStateOf(false)
+    }
     Surface(color = MaterialTheme.colorScheme.background) {
         Column(
             modifier = Modifier.fillMaxSize(),
@@ -46,13 +55,23 @@ fun LocationPermissionPage(
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             Spacer(modifier = Modifier.weight(1f))
-            Button(
-                onClick = {
-                    click = true
-                },
-                modifier = Modifier.padding(bottom = 16.dp) // Add bottom padding
-            ) {
-                Text(text = "Allow Location")
+
+            Image(
+                painterResource(id = R.drawable.icon),
+                contentDescription = "",
+                modifier = Modifier.size(400.dp)
+            )
+            Spacer(modifier = Modifier.weight(1f))
+
+            if (!click) {
+                Button(
+                    onClick = {
+                        click = true
+                    },
+                    modifier = Modifier.padding(bottom = 16.dp) // Add bottom padding
+                ) {
+                    Text(text = "Allow Location", )
+                }
             }
 
             if (click) {
@@ -61,18 +80,18 @@ fun LocationPermissionPage(
                         println("Granted")
                     },
 
-                    onPermissionDenied = { /*TODO*/ }) {
+                    onPermissionDenied = {  }) {
                 }
                 Button(onClick = {
                     if (areLocationPermissionsGranted(context)) {
                         navController.navigate("news_screen")
-                    }else{
-                        notgiven=true
+                    } else {
+                        notgiven = true
                     }
-                }) {
-                    Text(text = "Ready to go")
+                }, shape = CircleShape, modifier = Modifier.size(100.dp).padding(15.dp)) {
+                    Icon(Icons.Default.ArrowForward, contentDescription = "ready to go", modifier = Modifier.size(80.dp))
                 }
-                if(notgiven){
+                if (notgiven) {
                     Text(
                         text = "Permission Denied please Go to Settings and give location",
                         color = Color.Red

@@ -105,7 +105,7 @@ class MainActivity : ComponentActivity() {
                     }
                 ) {
                     composable(route="bookmark"){
-                        BookmarkpageUI(navController = navController, viewmodel =bookmarkmodel )
+                        BookmarkpageUI(navController = navController, viewmodel =bookmarkmodel, viewModel = viewModel )
                     }
                     composable(route = "news_screen") {
 

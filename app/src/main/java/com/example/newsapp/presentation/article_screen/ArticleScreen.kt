@@ -2,6 +2,7 @@ package com.example.newsapp.presentation.article_screen
 
 import android.webkit.WebView
 import android.webkit.WebViewClient
+import androidx.compose.foundation.gestures.detectTapGestures
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
@@ -26,6 +27,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.viewinterop.AndroidView
@@ -55,9 +57,21 @@ fun ArticleScreen(
     Scaffold(
         floatingActionButton = {
             FloatingActionButton(onClick = {
-                if (url != null) {
-                    state.selectedArticle?.content?.let { datamodel.insertString(it,state.selectedArticle.title,state.selectedArticle.url,state.selectedArticle.urlToImage) }
-                    added=true
+                if(!added){
+                    if (url != null) {
+                        state.selectedArticle?.content?.let {
+                            datamodel.insertString(
+                                it,
+                                state.selectedArticle.title,
+                                state.selectedArticle.url,
+                                state.selectedArticle.urlToImage
+                            )
+                        }
+                        added = true
+                    }
+                }else{
+                    state.selectedArticle?.let { datamodel.delete(it.title)
+                    added=false}
                 }
             }) {
                 if (!added) {
