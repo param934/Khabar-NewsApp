@@ -1,0 +1,2 @@
+ninja: Entering directory `C:\Users\kumar\Desktop\yogender\KhabarNews\app\.cxx\Debug\4v1dq2r5\arm64-v8a'
+ninja: no work to do.

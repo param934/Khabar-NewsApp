@@ -12,6 +12,8 @@ import java.util.Locale
 
 class MainViewModel(private val context: Context) : ViewModel() {
     var fileContent = mutableStateOf("")
+    external fun nativeTextToSpeech(text: String)
+    external fun nativeStopReading()
     private var textToSpeech: TextToSpeech? = null
     fun readFileContent(line: String) {
         fileContent.value=line
@@ -34,10 +36,18 @@ class MainViewModel(private val context: Context) : ViewModel() {
         textToSpeech?.stop()
         textToSpeech?.shutdown()
     }
+fun readConten() {
+    val content = fileContent.value
+    val toRead = content
+    nativeTextToSpeech(toRead)
+}
 
-    fun isTalkbackEnabled(): Boolean {
-        val accessibilityManager =
-            context.getSystemService(Context.ACCESSIBILITY_SERVICE) as AccessibilityManager
-        return accessibilityManager.isEnabled && accessibilityManager.isTouchExplorationEnabled
+    fun stopReadin() {
+        nativeStopReading()
+    }
+    companion object {
+        init {
+            System.loadLibrary("newsapp")
+        }
     }
 }
