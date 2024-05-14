@@ -933,7 +933,7 @@
             "outputFile": "com.example.newsapp-merged_res-67:/values_values.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\kumar\\Desktop\\KhabarNews\\app\\src\\main\\res\\values\\strings.xml",
+                    "source": "C:\\Users\\kumar\\Desktop\\yogender\\KhabarNews\\app\\src\\main\\res\\values\\strings.xml",
                     "from": {
                         "startLines": "1",
                         "startColumns": "4",
@@ -1058,6 +1058,23 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\kumar\\Desktop\\yogender\\KhabarNews\\app\\src\\main\\res\\values\\themes.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "59",
+                        "endColumns": "84",
+                        "endOffsets": "139"
+                    },
+                    "to": {
+                        "startLines": "246",
+                        "startColumns": "4",
+                        "startOffsets": "16637",
+                        "endColumns": "83",
+                        "endOffsets": "16716"
+                    }
+                },
+                {
                     "source": "C:\\Users\\kumar\\.gradle\\caches\\transforms-3\\1e5e6f88f02d0da4e3da66b3887a0570\\transformed\\play-services-base-18.3.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,33,46",
@@ -1094,6 +1111,23 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\kumar\\Desktop\\yogender\\KhabarNews\\app\\src\\main\\res\\values\\colors.xml",
+                    "from": {
+                        "startLines": "7,2,3,4,5,6,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "293,57,105,153,201,247,336",
+                        "endColumns": "41,46,46,46,44,44,41",
+                        "endOffsets": "330,99,147,195,241,287,373"
+                    },
+                    "to": {
+                        "startLines": "5,18,19,20,21,22,23",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "370,1346,1393,1440,1487,1532,1577",
+                        "endColumns": "41,46,46,46,44,44,41",
+                        "endOffsets": "407,1388,1435,1482,1527,1572,1614"
+                    }
+                },
+                {
                     "source": "C:\\Users\\kumar\\.gradle\\caches\\transforms-3\\fc62cdc32740470493f4db31a50f22f9\\transformed\\savedstate-1.2.1\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2",
@@ -1108,23 +1142,6 @@
                         "startOffsets": "6921",
                         "endColumns": "53",
                         "endOffsets": "6970"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\kumar\\Desktop\\KhabarNews\\app\\src\\main\\res\\values\\themes.xml",
-                    "from": {
-                        "startLines": "3",
-                        "startColumns": "4",
-                        "startOffsets": "59",
-                        "endColumns": "84",
-                        "endOffsets": "139"
-                    },
-                    "to": {
-                        "startLines": "246",
-                        "startColumns": "4",
-                        "startOffsets": "16637",
-                        "endColumns": "83",
-                        "endOffsets": "16716"
                     }
                 },
                 {
@@ -1233,23 +1250,6 @@
                         "startOffsets": "7280",
                         "endColumns": "82",
                         "endOffsets": "7358"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\kumar\\Desktop\\KhabarNews\\app\\src\\main\\res\\values\\colors.xml",
-                    "from": {
-                        "startLines": "7,2,3,4,5,6,8",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "293,57,105,153,201,247,336",
-                        "endColumns": "41,46,46,46,44,44,41",
-                        "endOffsets": "330,99,147,195,241,287,373"
-                    },
-                    "to": {
-                        "startLines": "5,18,19,20,21,22,23",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "370,1346,1393,1440,1487,1532,1577",
-                        "endColumns": "41,46,46,46,44,44,41",
-                        "endOffsets": "407,1388,1435,1482,1527,1572,1614"
                     }
                 },
                 {

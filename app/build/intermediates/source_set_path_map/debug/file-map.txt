@@ -61,9 +61,9 @@ com.example.newsapp-sqlite-framework-2.4.0-59 C:\Users\kumar\.gradle\caches\tran
 com.example.newsapp-animation-core-release-60 C:\Users\kumar\.gradle\caches\transforms-3\f756541c9ad68473a110208ac372bba4\transformed\animation-core-release\res
 com.example.newsapp-coil-base-2.2.2-61 C:\Users\kumar\.gradle\caches\transforms-3\f8f2013bce74509b2cf7f509495ddc16\transformed\coil-base-2.2.2\res
 com.example.newsapp-savedstate-1.2.1-62 C:\Users\kumar\.gradle\caches\transforms-3\fc62cdc32740470493f4db31a50f22f9\transformed\savedstate-1.2.1\res
-com.example.newsapp-resValues-63 C:\Users\kumar\Desktop\KhabarNews\app\build\generated\res\resValues\debug
-com.example.newsapp-packageDebugResources-64 C:\Users\kumar\Desktop\KhabarNews\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
-com.example.newsapp-packageDebugResources-65 C:\Users\kumar\Desktop\KhabarNews\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
-com.example.newsapp-merged_res-66 C:\Users\kumar\Desktop\KhabarNews\app\build\intermediates\merged_res\debug
-com.example.newsapp-debug-67 C:\Users\kumar\Desktop\KhabarNews\app\src\debug\res
-com.example.newsapp-main-68 C:\Users\kumar\Desktop\KhabarNews\app\src\main\res
+com.example.newsapp-resValues-63 C:\Users\kumar\Desktop\yogender\KhabarNews\app\build\generated\res\resValues\debug
+com.example.newsapp-packageDebugResources-64 C:\Users\kumar\Desktop\yogender\KhabarNews\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.example.newsapp-packageDebugResources-65 C:\Users\kumar\Desktop\yogender\KhabarNews\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.example.newsapp-merged_res-66 C:\Users\kumar\Desktop\yogender\KhabarNews\app\build\intermediates\merged_res\debug
+com.example.newsapp-debug-67 C:\Users\kumar\Desktop\yogender\KhabarNews\app\src\debug\res
+com.example.newsapp-main-68 C:\Users\kumar\Desktop\yogender\KhabarNews\app\src\main\res

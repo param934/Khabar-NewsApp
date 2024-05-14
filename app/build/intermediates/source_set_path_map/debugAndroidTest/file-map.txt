@@ -30,7 +30,7 @@ com.example.newsapp.test.app-runtime-release-28 C:\Users\kumar\.gradle\caches\tr
 com.example.newsapp.test.app-lifecycle-runtime-ktx-2.7.0-29 C:\Users\kumar\.gradle\caches\transforms-3\ed7d3637cfea09f392ade93aa3051085\transformed\lifecycle-runtime-ktx-2.7.0\res
 com.example.newsapp.test.app-ui-test-junit4-release-30 C:\Users\kumar\.gradle\caches\transforms-3\f1e41ffbcaa64c2399b1457c743ec0a2\transformed\ui-test-junit4-release\res
 com.example.newsapp.test.app-savedstate-1.2.1-31 C:\Users\kumar\.gradle\caches\transforms-3\fc62cdc32740470493f4db31a50f22f9\transformed\savedstate-1.2.1\res
-com.example.newsapp.test.app-androidTest-32 C:\Users\kumar\Desktop\KhabarNews\app\build\generated\res\resValues\androidTest\debug
-com.example.newsapp.test.app-mergeDebugAndroidTestResources-33 C:\Users\kumar\Desktop\KhabarNews\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
-com.example.newsapp.test.app-mergeDebugAndroidTestResources-34 C:\Users\kumar\Desktop\KhabarNews\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
-com.example.newsapp.test.app-merged_res-35 C:\Users\kumar\Desktop\KhabarNews\app\build\intermediates\merged_res\debugAndroidTest
+com.example.newsapp.test.app-androidTest-32 C:\Users\kumar\Desktop\yogender\KhabarNews\app\build\generated\res\resValues\androidTest\debug
+com.example.newsapp.test.app-mergeDebugAndroidTestResources-33 C:\Users\kumar\Desktop\yogender\KhabarNews\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.example.newsapp.test.app-mergeDebugAndroidTestResources-34 C:\Users\kumar\Desktop\yogender\KhabarNews\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.example.newsapp.test.app-merged_res-35 C:\Users\kumar\Desktop\yogender\KhabarNews\app\build\intermediates\merged_res\debugAndroidTest
