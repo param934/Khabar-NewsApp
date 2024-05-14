@@ -1,5 +1,0 @@
-# ninja log v5
-7	178	7373456828990880	CMakeFiles/native_app_glue.dir/C_/Users/kumar/AppData/Local/Android/Sdk/ndk/25.1.8937393/sources/android/native_app_glue/android_native_app_glue.c.o	bf12a2f3eb27ef6c
-182	307	7373456830177347	libnative_app_glue.a	9f7c1eb5a7990670
-1	659	7373456833874270	CMakeFiles/newsapp.dir/newsapp.cpp.o	b3622c228d51f532
-660	807	7373456835374876	C:/Users/kumar/Desktop/KhabarNews/app/build/intermediates/cxx/Debug/4v1dq2r5/obj/x86_64/libnewsapp.so	82966f12e8829f0c
