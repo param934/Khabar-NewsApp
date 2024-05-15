@@ -39,7 +39,7 @@ Khabar is built using the following technologies:
 - **Gemini AI**: An AI technology for interactive and intelligent content engagement.
 
 ## Getting Started
-git clone
+$ git clone https://github.com/DIvineJMd/KhabarNews.git
 
 
 
