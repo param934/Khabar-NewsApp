@@ -38,7 +38,7 @@ Khabar is an innovative Android application designed to deliver personalized new
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/Yogender21505/KhabarNews.git
+   https://github.com/param934/Khabar-NewsApp.git
 2. Open the project in Android Studio.
 3. Build the project to install all dependencies.
 4. Run the app on an emulator or a physical device.
@@ -63,6 +63,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 Contact
 For any queries or feedback, please contact:
 
-Yogender Kumar
-Email: kumaryogender2004@gmail.com 
-GitHub: github.com/Yogender21505
+Param Kumar Raman
+Email: paramkr2004@gmail.com 
